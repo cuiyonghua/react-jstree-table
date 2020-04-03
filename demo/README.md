@@ -1,4 +1,4 @@
-# react-simple-jstree Demo App
+# react-jstree-table Demo App
 
 ## Getting Started
 

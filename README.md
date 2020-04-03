@@ -1,11 +1,11 @@
-# react-simple-jstree
+# react-jstree-table
 
-![Downloads](https://img.shields.io/npm/dm/react-simple-jstree.svg)
-![Downloads](https://img.shields.io/npm/dt/react-simple-jstree.svg)
-![npm version](https://img.shields.io/npm/v/react-simple-jstree.svg)
-![dependencies](https://img.shields.io/david/alwinn1977/react-simple-jstree.svg)
-![dev dependencies](https://img.shields.io/david/dev/alwinn1977/react-simple-jstree.svg)
-![License](https://img.shields.io/npm/l/react-simple-jstree.svg)
+![Downloads](https://img.shields.io/npm/dm/react-jstree-table.svg)
+![Downloads](https://img.shields.io/npm/dt/react-jstree-table.svg)
+![npm version](https://img.shields.io/npm/v/react-jstree-table.svg)
+![dependencies](https://img.shields.io/david/alwinn1977/react-jstree-table.svg)
+![dev dependencies](https://img.shields.io/david/dev/alwinn1977/react-jstree-table.svg)
+![License](https://img.shields.io/npm/l/react-jstree-table.svg)
 
 The simple React.js wrapper for [jsTree](https://github.com/vakata/jstree).
 This component allows you to draw trees from JSON data easily and quickly.
@@ -17,13 +17,13 @@ about appropriate JSON data structure.
 Install it via npm:
 
 ```shell
-npm install react-simple-jstree
+npm install react-jstree-table
 ```
 
 And include in your project:
 
 ```javascript
-import TreeView from 'react-simple-jstree';
+import TreeView from 'react-jstree-table';
 ```
 
 ## Components's Props
@@ -43,7 +43,7 @@ It is an optional event handler for the changed event, which occurs when one or 
 
 ```javascript
 import React, {Component} from 'react';
-import TreeView from 'react-simple-jstree';
+import TreeView from 'react-jstree-table';
 
 export class Tree extends Component {
 

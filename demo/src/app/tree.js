@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import TreeView from 'react-simple-jstree';
+import TreeView from 'react-jstree-table';
 
 export class Tree extends Component {
 
