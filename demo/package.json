@@ -2,7 +2,7 @@
   "dependencies": {
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
-    "react-jstree-table": "cuiyonghua/react-jstree-table"
+    "react-jstree-table": "^0.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.2.2",
