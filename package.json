@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "jstree": "^3.3.9",
-    "jstreetable": "adamjimenez/jstree-table"
+    "jstreetable": "^1.0.0"
   }
 }

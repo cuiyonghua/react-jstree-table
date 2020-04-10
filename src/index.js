@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import $ from 'jquery';
-import 'jstreetable/jstreetable';
+import 'jstreetable/jstreetable.min';
 import 'jstree/dist/jstree.min';
 import 'jstree/dist/themes/default/style.css';
 
