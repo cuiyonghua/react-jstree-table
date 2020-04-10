@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TreeView from 'react-jstree-table';
+import 'jstree/dist/themes/default/style.css';
 
 export class Tree extends Component {
 
@@ -7,6 +8,15 @@ export class Tree extends Component {
     super(props);
     this.state = {
       data: {
+        plugins: ["themes","json","table","dnd","contextmenu","search","sort"],
+        table: {
+          columns: [
+              { width: 210, header: "Nodes", title: "_DATA_" },
+              { cellClass: "col1", value: "price", width: 60, header: "Price", title: "price" },
+              { cellClass: "col2", value: "size", header: "Qty", title: "size" }
+          ],
+          resizable: false
+        },
         core: {
           data: [
             {
@@ -15,7 +25,8 @@ export class Tree extends Component {
               {text: 'Child node 2'}
               ]
             }
-          ]
+          ],
+          "check_callback": true
         }
       },
       selected: [],
@@ -27,6 +38,11 @@ export class Tree extends Component {
     newData.push({text: 'New child node'});
     this.setState({
       data: {
+        plugins: ["core","ui","table"],
+        table: {
+          columns: ['aa', 'bb', 'cc'],
+          width: 25
+        },
         core: {
           data: [
             {
