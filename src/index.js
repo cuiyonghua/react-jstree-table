@@ -9,6 +9,7 @@ class TreeView extends Component {
 
   static propTypes = {
     treeData: PropTypes.object.isRequired,
+    treeSearchData: PropTypes.object.isRequired,
     onChange: PropTypes.func,
   };
 
@@ -17,7 +18,7 @@ class TreeView extends Component {
   };
 
   shouldComponentUpdate(nextProps) {
-    return nextProps.treeData !== this.props.treeData;
+    return (nextProps.treeData !== this.props.treeData || nextProps.treeSearchData !== this.props.treeSearchData);
   }
 
   componentDidMount() {
@@ -31,11 +32,13 @@ class TreeView extends Component {
   }
 
   componentDidUpdate() {
-    const { treeData } = this.props;
+    const { treeData, treeSearchData } = this.props;
     if (treeData) {
       $(this.treeContainer).jstree(true).settings = treeData;
       $(this.treeContainer).jstree(true).refresh();
-
+      if(treeSearchData) {
+        $(this.treeContainer).jstree(true).search = treeSearchData;
+      }
     }
   }
 
