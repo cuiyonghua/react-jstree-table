@@ -37,7 +37,7 @@ class TreeView extends Component {
       $(this.treeContainer).jstree(true).settings = treeData;
       $(this.treeContainer).jstree(true).refresh();
       if(treeSearchData) {
-        $(this.treeContainer).jstree(true).search = treeSearchData;
+        $(this.treeContainer).jstree('search', treeSearchData);
       }
     }
   }
