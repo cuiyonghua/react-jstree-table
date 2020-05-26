@@ -36,8 +36,23 @@ class TreeView extends Component {
     if (treeData) {
       $(this.treeContainer).jstree(true).settings = treeData;
       $(this.treeContainer).jstree(true).refresh();
-      if(treeSearchData) {
-        $(this.treeContainer).jstree('search', treeSearchData);
+      // if(treeSearchData) {
+      //   $(this.treeContainer).jstree('search', treeSearchData);
+      // }
+      if (Array.isArray(treeSearchData)) {
+        treeSearchData.map( (v, k, treeSearchData) => {
+          if(k === 0) {
+            $(this.treeContainer).jstree(true).search(v);
+          } else {
+            $(this.treeContainer).jstree(true).search(v, true, false, false, true);
+          }
+          
+        });
+        // $.each(treeSearchData, function(k, v) {
+        //   $(this.treeContainer).jstree(true).search(v, true, false, false, true);
+        // });
+      } else {
+        $(this.treeContainer).jstree(true).search(treeSearchData);
       }
     }
   }
