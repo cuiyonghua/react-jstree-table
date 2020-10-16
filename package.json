@@ -1,7 +1,7 @@
 {
   "name": "react-jstree-table",
   "description": "The simple React.js wrapper for jstree table",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "main": "lib/index.js",
   "author": "Tony_Cui",
   "repository": "cuiyonghua/react-jstree-table",
@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "jstree": "^3.3.9",
-    "jstreetable": "^1.0.10"
+    "jstreetable": "^1.0.12"
   }
 }
